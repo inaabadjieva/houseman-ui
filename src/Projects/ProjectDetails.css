@@ -1,0 +1,10 @@
+.col-wrapper {
+  min-height: 500px;
+  border: solid 1px;
+}
+
+.col-title {
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: solid 1px;
+}

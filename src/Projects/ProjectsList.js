@@ -15,7 +15,7 @@ class ProjectsList extends Component {
           {
             this.props.projects
               .map((project, idx) => (
-                <Col key={'projectCol' + idx} sm="4">
+                <Col key={'projectCol' + idx} md="4" sm="10">
                   <ProjectCard key={'projectCard' + idx} project={project} />
                 </Col>
               ))

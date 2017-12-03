@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import { Container } from 'reactstrap';
 
 import { projects } from './samples/projects';
-import ProjectsList from './ProjectsList';
+import ProjectsList from './Projects/ProjectsList';
 
-class App extends Component {
+class Home extends Component {
 
   constructor() {
     super();
@@ -25,4 +25,4 @@ class App extends Component {
 
 }
 
-export default App;
+export default Home;

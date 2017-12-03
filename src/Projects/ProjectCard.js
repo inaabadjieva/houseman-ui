@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { Link } from 'react-router-dom';
+
 import { Card, Button, CardFooter, CardBody,
   CardTitle, CardText } from 'reactstrap';
 import { ButtonDropdown, DropdownToggle,
@@ -23,7 +25,7 @@ class ProjectCard extends Component {
   }
 
   render() {
-    const { name, description, tasks } = this.props.project;
+    const { id, name, description, tasks } = this.props.project;
 
     return (
       <Card>
@@ -31,7 +33,9 @@ class ProjectCard extends Component {
         <CardBody>
           <CardTitle>{ name }</CardTitle>
           <CardText>{ description }</CardText>
-          <Button>Open</Button>
+          <Link to={'/projects/' + id}>
+            <Button>Open Project</Button>
+          </Link>
         </CardBody>
         
         <CardFooter>
